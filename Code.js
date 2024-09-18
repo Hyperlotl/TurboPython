@@ -31,19 +31,9 @@ message
           text: 'Run Python Code',
         },
         {
-          opcode: 'checkPython',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Python Initialised?',
-        },
-        {
-          opcode: 'checkPythonLoading',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Python Loading?',
-        },
-        {
-          opcode: 'pythonLoadingStep',
+          opcode: 'getCode',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Python Loading Status',
+          text: 'Python script',
         },
         {
           opcode: 'addCode',
@@ -66,11 +56,6 @@ message
           text: 'Delete Python Script',
         },
         {
-          opcode: 'getCode',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'Python script',
-        },
-        {
           opcode: 'runCustomCode',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Get variable [VAR]',
@@ -80,6 +65,21 @@ message
             },
           },
           hideFromPalette: true
+        },
+        {
+          opcode: 'checkPython',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: 'Python Initialised?',
+        },
+        {
+          opcode: 'checkPythonLoading',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: 'Python Loading?',
+        },
+        {
+          opcode: 'pythonLoadingStep',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'Python Loading Status',
         },
       ],
     };
