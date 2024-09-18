@@ -66,6 +66,16 @@ message
           blockType: Scratch.BlockType.REPORTER,
           text: 'Python script',
         },
+        {
+          opcode: 'runCustomCode',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'Get variable [VAR]',
+          arguments: {
+            VAR: {
+              type: Scratch.ArgumentType.STRING,
+            },
+          },
+        },
       ],
     };
   }
@@ -120,6 +130,22 @@ message
     // Run the Python code and get the result
     if (window.pyodide) {
       let result = await window.pyodide.runPythonAsync(this.pythonCode);
+      return result;
+    } else {
+      throw new Error("Pyodide is not available");
+    }
+  }
+  async runCustomCode(args) {
+    // Ensure Pyodide is loaded
+    if (!this.pyodideReady) {
+      if (!this.pyodideLoading) {
+        await this.PythonInit();
+      }
+    }
+
+    // Run the Python code and get the result
+    if (window.pyodide) {
+      let result = await window.pyodide.runPythonAsync(args);
       return result;
     } else {
       throw new Error("Pyodide is not available");
