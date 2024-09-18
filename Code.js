@@ -15,6 +15,9 @@ message
     return {
       id: 'turbopython',
       name: 'TurboPython',
+      color1: '#ff4000',
+      color2: '#b52d00',
+      color3: '#7d1f00',
       blocks: [
         {
           opcode: 'PythonInit',
@@ -26,24 +29,21 @@ message
           opcode: 'runCode',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Run Python Code',
-          color1: '#ff4000',
-          color2: '#b52d00',
-          color3: '#7d1f00',
         },
         {
           opcode: 'checkPython',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Python Initialised?'
+          text: 'Python Initialised?',
         },
         {
           opcode: 'checkPythonLoading',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Python Loading?,
+          text: 'Python Loading?',
         },
         {
           opcode: 'pythonLoadingStep',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Python Loading Status'
+          text: 'Python Loading Status',
         },
         {
           opcode: 'addCode',
@@ -59,33 +59,21 @@ message
           opcode: 'resetCode',
           blockType: Scratch.BlockType.COMMAND,
           text: 'Reset Python script to default',
-          color1: '#ff4000',
-          color2: '#b52d00',
-          color3: '#7d1f00',
         },
         {
           opcode: 'deleteCode',
           blockType: Scratch.BlockType.COMMAND,
           text: 'Delete Python Script',
-          color1: '#ff4000',
-          color2: '#b52d00',
-          color3: '#7d1f00',
         },
         {
           opcode: 'getCode',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Python script',
-          color1: '#ff4000',
-          color2: '#b52d00',
-          color3: '#7d1f00',
         },
         {
           opcode: 'runCustomCode',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Get variable [VAR]',
-          color1: '#ff4000',
-          color2: '#b52d00',
-          color3: '#7d1f00',
           arguments: {
             VAR: {
               type: Scratch.ArgumentType.STRING,
