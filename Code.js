@@ -1,4 +1,4 @@
-const icon = "data:image/svg+xml;base64,aHR0cHM6Ly9naXRodWIuY29tL0h5cGVybG90bC9UdXJib1B5dGhvbi9ibG9iL21haW4vVHVyYm9weXRob24lMjBsb2dvLnN2Zw=="
+const icon = "data:image/svg+xml;base64,aHR0cHM6Ly9naXRodWIuY29tL0h5cGVybG90bC9UdXJib1B5dGhvbi9ibG9iL21haW4vVHVyYm9weXRob24lMjBsb2dvLnN2Zw==";
 class TurboPython {
   constructor() {
     this.pyodideReady = false; // Flag to check if Pyodide is initialized
