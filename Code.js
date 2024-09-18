@@ -26,6 +26,9 @@ message
           opcode: 'runCode',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Run Python Code',
+          color1: '#ff4000',
+          color2: '#b52d00',
+          color3: '#7d1f00',
         },
         {
           opcode: 'checkPython',
