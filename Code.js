@@ -1,3 +1,4 @@
+const icon = "data:image/svg+xml;base64,aHR0cHM6Ly9naXRodWIuY29tL0h5cGVybG90bC9UdXJib1B5dGhvbi9ibG9iL21haW4vVHVyYm9weXRob24lMjBsb2dvLnN2Zw=="
 class TurboPython {
   constructor() {
     this.pyodideReady = false; // Flag to check if Pyodide is initialized
@@ -15,6 +16,7 @@ message
     return {
       id: 'turbopython',
       name: 'TurboPython',
+      menuIconURI: icon
       color1: '#ff4000',
       color2: '#b52d00',
       color3: '#7d1f00',
