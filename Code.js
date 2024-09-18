@@ -76,6 +76,7 @@ message
               type: Scratch.ArgumentType.STRING,
             },
           },
+          hideFromPalette: true
         },
       ],
     };
