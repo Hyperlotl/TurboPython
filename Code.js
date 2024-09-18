@@ -8,6 +8,7 @@ message = ("Hello World!")
 message
     `; // Predefine the Python code
     this.preloadPyodide(); // Preload Pyodide when the extension is initialized
+    this.tempCode = ``
   }
 
   getInfo() {
@@ -142,10 +143,12 @@ message
         await this.PythonInit();
       }
     }
+    this.tempcode = this.pythonCode
+    this.pythonCode = args
 
     // Run the Python code and get the result
     if (window.pyodide) {
-      let result = await window.pyodide.runPythonAsync(args);
+      let result = await window.pyodide.runPythonAsync(this.pythonCode);
       return result;
     } else {
       throw new Error("Pyodide is not available");
