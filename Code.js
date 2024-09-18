@@ -1,4 +1,3 @@
-const icon = "https://github.com/Hyperlotl/TurboPython/blob/main/Turbopython%20logo.svg";;
 class TurboPython {
   constructor() {
     this.pyodideReady = false; // Flag to check if Pyodide is initialized
@@ -16,7 +15,6 @@ message
     return {
       id: 'turbopython',
       name: 'TurboPython',
-      menuIconURI: icon
       color1: '#ff4000',
       color2: '#b52d00',
       color3: '#7d1f00',
