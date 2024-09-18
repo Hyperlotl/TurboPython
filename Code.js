@@ -66,6 +66,7 @@ message
           },
           hideFromPalette: true
         },
+        "---",
         {
           opcode: 'checkPython',
           blockType: Scratch.BlockType.BOOLEAN,
