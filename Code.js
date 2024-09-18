@@ -17,9 +17,9 @@ message
       id: 'turbopython',
       name: 'TurboPython',
       menuIconURI: icon,
-      color1: '#ff4000',
-      color2: '#b52d00',
-      color3: '#7d1f00',
+      color1: '#a1a1a1',
+      color2: '#858585',
+      color3: '#424242',
       blocks: [
         {
           opcode: 'PythonInit',
@@ -73,16 +73,25 @@ message
           opcode: 'checkPython',
           blockType: Scratch.BlockType.BOOLEAN,
           text: 'Python Initialised?',
+          color1: '#ff4000',
+          color2: '#b52d00',
+          color3: '#7d1f00',
         },
         {
           opcode: 'checkPythonLoading',
           blockType: Scratch.BlockType.BOOLEAN,
           text: 'Python Loading?',
+          color1: '#ff4000',
+          color2: '#b52d00',
+          color3: '#7d1f00',
         },
         {
           opcode: 'pythonLoadingStep',
           blockType: Scratch.BlockType.REPORTER,
           text: 'Python Loading Status',
+          color1: '#ff4000',
+          color2: '#b52d00',
+          color3: '#7d1f00',
         },
       ],
     };
