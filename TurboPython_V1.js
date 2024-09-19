@@ -249,6 +249,7 @@ message
 
   runScript(args) {
     if (args.SCRIPT in this.pythonScripts) {
+      this.pythonResult = "Python is running..."
       this.pythonCode = this.pythonScripts[args.SCRIPT];
       this.pythonResult = this.RunCode();
     }
