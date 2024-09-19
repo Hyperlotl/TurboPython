@@ -60,8 +60,8 @@ message
           arguments:{
             SCRIPT: {
               type:Scratch.ArgumentType.STRING
-            }
-          }
+            },
+          },
         },
         {
           opcode: 'addCode',
@@ -328,6 +328,9 @@ message
     else {
       return "error. No script found."
     }
+  }
+  addScript(args) {
+    this.pythonScripts[args.SCRIPT] = "";
   }
 }
 
