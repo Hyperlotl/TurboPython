@@ -252,7 +252,11 @@ message
       this.pythonResult = "Uploading script...";
       this.pythonCode = this.pythonScripts[args.SCRIPT];
       this.pythonResult = "Python is running...";
-      this.pythonResult = await this.RunCode();
+      if (window.pyodide) {
+      this.pythonResult = await window.pyodide.runPythonAsync(this.pythonCode);
+    } else {
+      throw new Error("Pyodide is not available");
+    }
     }
     else {
       this.pythonResult = "error: Script not found";
