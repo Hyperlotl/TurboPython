@@ -247,11 +247,12 @@ message
     return await this.RunCode(); // Ensure it returns the result
   }
 
-  runScript(args) {
+  async runScript(args) {
     if (args.SCRIPT in this.pythonScripts) {
-      this.pythonResult = "Python is running..."
+      this.pythonResult = "Uploading script...";
       this.pythonCode = this.pythonScripts[args.SCRIPT];
-      this.pythonResult = this.RunCode();
+      this.pythonResult = "Python is running...";
+      this.pythonResult = await this.RunCode();
     }
     else {
       this.pythonResult = "error: Script not found";
