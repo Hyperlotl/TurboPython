@@ -250,7 +250,7 @@ message
   async runScript(args) {
     if (args.SCRIPT in this.pythonScripts) {
       this.pythonCode = this.pythonScripts[args.SCRIPT];
-      this.pythonResult = await this.RunCode;
+      this.pythonResult = await this.RunCode();
     }
     else {
       this.pythonResult = "error: Script not found";
