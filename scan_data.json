@@ -1,0 +1,7 @@
+{
+    "content1": {
+        "name": "TurboPython",
+        "description": "Extension to run Python scripts inside turbowarp",
+        "link": "https://github.com/Hyperlotl/TurboPython"
+    }
+}
