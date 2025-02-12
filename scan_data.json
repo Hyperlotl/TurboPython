@@ -1,7 +1,9 @@
 {
-    "content1": {
+    "TurboPython": {
         "name": "TurboPython",
         "description": "Extension to run Python scripts inside turbowarp",
-        "link": "https://github.com/Hyperlotl/TurboPython"
+        "image_url": "https://raw.githubusercontent.com/Hyperlotl/TurboPython/263d91f7fea9c3771d8a94885a34f21add7aaa97/Turbopython%20logo.svg",
+        "link": "https://github.com/Hyperlotl/TurboPython",
+        "tag": "ext"
     }
 }
